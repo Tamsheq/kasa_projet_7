@@ -1,6 +1,6 @@
 import './banner.scss'
-import { useLocation } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 
 export default function Banner() {
 	// aboutPage qui permet de savoir si la page est About (=true) ou non (=false)

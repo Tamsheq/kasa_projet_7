@@ -1,6 +1,6 @@
 import Header from "../../components/header/Header"
 import Footer from "../../components/footer/Footer"
-import Banner from "../../components/banner/banner"
+import Banner from "../../components/banner/Banner"
 import List from "../../components/list/List"
 import './Home.scss'
 
