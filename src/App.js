@@ -1,6 +1,7 @@
 import Home from './pages/home/Home'
 import Error from './pages/error/Error'
 import About from './pages/about/About'
+import Logement from './pages/logement/Logement'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Kasa" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/logement/:id" element={<Logement />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
@@ -17,3 +19,5 @@ function App() {
 }
 
 export default App;
+
+//
