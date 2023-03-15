@@ -1,3 +1,4 @@
+import './carousel.scss'
 import Arrow_right from '../../assets/arrow_right.png'
 import Arrow_left from '../../assets/arrow_left.png'
 import { useState } from 'react'
@@ -40,6 +41,7 @@ export default function Slider({imageSlider}) {
                               alt ="show prev slide"
                               onClick={prevSlide}
                          />
+                         <p className='slideCount'>{currentIndex + 1} / {imageSlider.length}</p>
                     </>
                }
           </section>
