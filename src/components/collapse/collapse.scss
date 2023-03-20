@@ -52,3 +52,22 @@
                height: 0;
           }
 }
+
+.Logement_collapse{
+     display: flex;
+     justify-content: space-between;
+     gap: 70px;
+     margin: 30px auto;
+     width: 95%;
+     &_item{
+         width: 50%;
+     }
+     @media screen and (max-width: 650px){
+         flex-direction: column;
+         gap: 20px;
+         margin: 20px auto;
+         &_item{
+             width: 100%;
+         }    
+     }
+}
