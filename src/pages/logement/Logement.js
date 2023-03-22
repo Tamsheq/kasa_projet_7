@@ -39,32 +39,32 @@ export default function Logement() {
 	const description = dataCurrentLogement?.description ?? "";
 	const equipments = dataCurrentLogement?.equipments ?? [];
 
-	// Et on return en front les composants suivants :
-	// Header, Slider, les données correspondant à l'ID et le footer
-	return (
-	<>
-		<Header />
+// Et on return en front les composants suivants :
+// Header, Slider, les données correspondant à l'ID et le footer
+return (
+<>
+	<Header />
 		<Slider imageSlider={imageSlider} />
-		<main className="Logement">
-		<div className="Logement_content">
-			<div className="Logement_content_infos">
-			<h1>{dataCurrentLogement?.title}</h1>
-			<p>{dataCurrentLogement?.location}</p>
+			<main className="Logement">
+			<div className="Logement_content">
+				<div className="Logement_content_infos">
+				<h1>{dataCurrentLogement?.title}</h1>
+				<p>{dataCurrentLogement?.location}</p>
+				<div>
+				{dataCurrentLogement?.tags?.map((tag, index) => {
+					return (
+					<button key={index}>{tag}</button>
+					)
+				})}
+				</div>
+				</div>
+				<div className="Logement_content_host">
 			<div>
-			{dataCurrentLogement?.tags?.map((tag, index) => {
-				return (
-				<button key={index}>{tag}</button>
-				)
-			})}
-			</div>
-			</div>
-			<div className="Logement_content_host">
-			<div>
-			<div className='Logement_content_host_name'>
-				<span>{name[0]}</span>
-				<span>{name[1]}</span>
-			</div>
-			<img src={dataCurrentLogement?.host?.picture} alt="host of this house" />
+				<div className='Logement_content_host_name'>
+					<span>{name[0]}</span>
+					<span>{name[1]}</span>
+				</div>
+				<img src={dataCurrentLogement?.host?.picture} alt="host of this house" />
 			</div>
 
 			<div className="Logement_content_host_stars">
@@ -75,18 +75,18 @@ export default function Logement() {
 				)
 			})}
 			</div>
+				</div>
 			</div>
-		</div>
-		<div className="Logement_collapse">
-			<div className="Logement_collapse_item">
-			<Collapse title={'Description'} content={description} />
-			</div>
-			<div className="Logement_collapse_item">
-			<Collapse title={'Équipements'} content={equipments} />
-			</div>
-		</div>
-		</main>
-		<Footer />
-	</>
-	)
-	}
+				<div className="Logement_collapse">
+					<div className="Logement_collapse_item">
+					<Collapse title={'Description'} content={description} />
+					</div>
+					<div className="Logement_collapse_item">
+					<Collapse title={'Équipements'} content={equipments} />
+					</div>
+				</div>
+			</main>
+	<Footer />
+</>
+)
+}
