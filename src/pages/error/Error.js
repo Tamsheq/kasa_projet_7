@@ -12,7 +12,7 @@ export default function Error() {
 				<h1 className='Error_infos_title'>404</h1>
 				<p className='Error_infos_content'>La page que vous recherchez n'existe pas.</p>
 			</div>
-				<Link className='Error_infos_return' to='/'>Retourner sur la page d'accueil</Link>
+				<Link className='Error_infos_return' to='/Kasa'>Retourner sur la page d'accueil</Link>
 			<Footer />
 		</div>
 	)
