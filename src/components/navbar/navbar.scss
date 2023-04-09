@@ -12,6 +12,7 @@
         &_active{
             position: relative;
             color: $color-secondary;
+            text-decoration: underline solid $color-secondary;
             transition: all 0.2s ease-in-out;
             
         }
