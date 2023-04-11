@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <nav className='nav'>
             <ul className='nav_list'>
-                <li className={currentRoute === '/Kasa/' ? 'nav_list_item_active' : 'nav_list_item'}>
+                <li className={(currentRoute === '/Kasa/' || currentRoute === '/') ? 'nav_list_item_active' : 'nav_list_item'}>
                     <Link  to='/Kasa/'>
                         Accueil
                     </Link>
