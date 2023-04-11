@@ -7,7 +7,7 @@ export default function Header() {
 	return (
 		<header className='header'>
 			<h1>
-				<Link to="/Kasa">
+				<Link to="/Kasa/">
 					<img src={Logo} alt="kasa, location d'appartements" />
 				</Link>
 			</h1>
