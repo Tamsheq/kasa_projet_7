@@ -10,7 +10,7 @@ export default function Home() {
 	return (
 		<div className='home'>
 			<Header />
-			<Banner />
+			<Banner desc={"Chez vous, partout et ailleurs"}/>
 			<List />
 			<Footer />
 		</div>
