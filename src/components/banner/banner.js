@@ -1,10 +1,9 @@
 import './banner.scss'
 
-export default function Banner({selector, desc}) {
-
-	return (
-		<section className={selector ? selector : 'banner'}>
-			{desc.length && <p>{desc}</p>}
-		</section>
-	)
+export default function Banner({ image, desc }) {
+  return (
+    <section className="banner" style={{ backgroundImage: `url(${image})`}}>
+      {desc && <p>{desc}</p>}
+    </section>
+  )
 }

@@ -3,9 +3,12 @@ import Header from "../../components/header/Header"
 import Banner from '../../components/banner/Banner'
 import Collapse from '../../components/collapse/Collapse'
 import Footer from '../../components/footer/Footer'
+import AboutScreenImage from "../../assets/about_screen.png"
 
 export default function About() {
-     // tableau about
+     const aboutPage = true;
+	
+	// tableau about
 	const aboutUs = [
 		{
 			"id": "1",
@@ -33,7 +36,7 @@ export default function About() {
 	return (
 		<div>
 			<Header />
-			<Banner selector={'banner_about'}/>
+			<Banner image={AboutScreenImage} selector={aboutPage ? 'banner_about' : 'banner'}/>
 			<main className='about_main'>
 				{aboutUs.map(data => {
 					return (
