@@ -36,7 +36,7 @@ export default function About() {
 	return (
 		<div>
 			<Header />
-			<Banner image={AboutScreenImage} selector={aboutPage ? 'banner_about' : 'banner'}/>
+			<Banner image={AboutScreenImage} bannerClass={aboutPage ? 'banner_about' : 'banner'}/>
 			<main className='about_main'>
 				{aboutUs.map(data => {
 					return (
